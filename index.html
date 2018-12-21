@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Travel Agency</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	</head>
+	<body>
+		<!-- Navbar -->
+<div id="navbar">
+	<nav class="topnav">
+		<ul>
+		<div id=navitem>
+			<li>
+			<a href="#"><i class="far fa-paper-plane"></i> Travel</a>
+			</li>
+		</div>
+		<div id=navitem2>
+			<li>
+				<a href="#home">Home</a>
+			</li>
+		</div>
+		<div id=navitem2>
+			<li>
+				<a href="#vacations">Vacations</a>
+			</li>
+		</div>
+		<div id=navitem2>
+			<li>
+				<a href="#flights">Flights</a>
+			</li>
+		</div>
+		<div id=navitem2>
+		 	<li>
+				<a href="#hotel">Hotel</a>
+			</li>
+		</div>
+		<div id=navitem2>
+		  <li>
+				<a href="#car">Car</a>
+			</li>
+		</div>
+		<div id=navitem2>
+			<li>
+				<a href="#blog">Blog</a>
+			</li>
+		</div>
+		<div id=navitem2>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+		</div>
+		</ul>
+	</nav>
+</div>
+
+	<!-- Tab -->
+<div id="parallax">
+	<div class="grid-parallax">
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Flights')">Flights</button>
+		  <button class="tablinks" onclick="openCity(event, 'Hotels')">Hotels</button>
+		  <button class="tablinks" onclick="openCity(event, 'Packages')">Packages</button>
+		</div>
+	</div>
+		<div id="Flights" class="tabcontent">
+		  <form action="/action_page.php" method="get">
+		  	<h3>From:</h3> <input type="text" name="from" placeholder="Los Angeles, USA">
+		  	<h3>To:</h3> <input type="text" name="to" placeholder="Tokyo, Japan">
+		 		<h3>Chek in:</h3> <input type="text" name="chekin" placeholder="dd/mm/yyyy">
+		 		<h3>Check Out:</h3> <input type="text" name="checkin" placeholder="dd/mm/yyyy">
+		 		<h3>Class:</h3> <input type="text" name="class" placeholder="Economy/First/Business">
+		  	<h3>Adult:</h3> <input type="number" name="adults" placeholder="0">
+				<h3>Children:</h3> <input type="number" name="children" placeholder="0">
+				<button type="btn" name="searcflights">Search Flights</button> <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>X</span>
+		  </form>
+		</div>
+		<div id="Hotels" class="tabcontent">
+		  <form action="/action_page.php" method="get">
+		  <h3>City:</h3>	<input type="text" name="from" placeholder="Los Angeles, USA">
+		  <h3>Depart:</h3> <input type="text" name="depart" placeholder="dd/mm/yyyy">
+		  <h3>Return:</h3> <input type="text" name="return" placeholder="dd/mm/yyyy">
+		  <h3>Rooms:</h3> <input type="number" name="rooms" placeholder="0">
+		  <h3>Adult:</h3> <input type="number" name="adults" placeholder="0">
+		  <h3>Children:</h3> <input type="number" name="children" placeholder="0">
+		  <button type="btn" name="searchotels">Search Hotels</button>	<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>X</span>
+			</form>
+		</div>
+		<div id="Packages" class="tabcontent">
+		  <form action="/action_page.php" method="get">
+		  <h3>From:</h3>	<input type="text" name="from" placeholder="Los Angeles, USA">
+		  <h3>Destination:</h3>	<input type="text" name="destination" placeholder="Tokyo, Japan">
+		  <h3>Depart:</h3> <input type="text" name="depart" placeholder="dd/mm/yyyy">
+		  <h3>Return:</h3> <input type="text" name="return" placeholder="dd/mm/yyyy">
+		  <h3>Rooms:</h3> <input type="number" name="rooms" placeholder="0">
+		  <h3>Adult:</h3> <input type="number" name="adults" placeholder="0">
+		  <h3>Children:</h3> <input type="number" name="children" placeholder="0">
+		  <button type="btn" name="searchpackages">Search Packages</button> <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>X</span>
+			</form>
+		</div>
+	<div class="grid-parallax">
+		<div class="textarea">
+			<p>Lorem ipsum dolor sit.</p>
+			<h2>Exclusive Limited Time Offer</h2>
+			<h4>Fly to Hong Kong via Los Angeles, USA</h4>
+			<h1>$599</h1>
+		</div>
+	</div>
+</div>
+
+<!-- Header -->
+ <div id="header">
+ 	<div class="header">
+ 		<h2>Hot Tours</h2>
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+ 	</div>
+	<div class="boxes">
+		<div id="box1">
+			<h2>New York</h2>
+			<p>3 nights + Flight 5*Hotel</p>
+			<h1>$1,000</h1>
+			<button type="button" name="button">Book now <i class="fas fa-arrow-right"></i></button>
+		</div>
+		<div id="box2">
+			<h2>France</h2>
+			<p>4 nights + Flight 5*Hotel</p>
+			<h1>$1,000</h1>
+			<button type="button" name="button">Book now <i class="fas fa-arrow-right"></i></button>
+		</div>
+		<div id="box3">
+			<h2>Ecuator</h2>
+			<p>3 nights + Flight 4*Hotel</p>
+			<h1>$1,000</h1>
+			<button type="button" name="button">Book now <i class="fas fa-arrow-right"></i></button>
+		</div>
+	<div id="btn1">
+		<button type="button" name="button">See all offers <i class="fas fa-arrow-right"></i></button>
+	</div>
+	</div>
+ </div>
+<!-- learn more links -->
+<div class="container">
+	<div id="box">
+		<h3>Family Travel <i class="fas fa-couch"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+	<div id="box">
+		<h3>Business Travel <i class="fas fa-tasks"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+	<div id="box">
+		<h3>Travel Plans <i class="far fa-calendar-check"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+	<div id="box">
+		<h3>Solo Travel <i class="fas fa-compass"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+	<div id="box">
+		<h3>Honeymoon <i class="fas fa-heart"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+	<div id="box">
+		<h3>Explorer <i class="fas fa-hiking"></i></h3>
+		<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+		<a href="#">Learn More</a>
+	</div>
+</div>
+
+<!-- 11 boxes -->
+<div id="grid-container">
+<div class="grid-container1">
+	<div class="place1">
+	<div id="place">
+		<a href="#"><h3>Africa</h3></a>
+	</div>
+	</div>
+	<div class="place2">
+	<div id="place">
+		<a href="#"><h3>Japan</h3></a>
+	</div>
+	</div>
+	<div class="place3">
+	<div id="place">
+		<a href="#"><h3>Brazil</h3></a>
+	</div>
+	</div>
+	<div class="place4">
+	<div id="place">
+		<a href="#"><h3>Italy</h3></a>
+	</div>
+	</div>
+</div>
+<div class="grid-container2">
+	<div class="place5">
+	<div id="place">
+		<a href="#"><h3>Hong Kong</h3></a>
+	</div>
+	</div>
+	<div id="popular">
+		<div class="move">
+			<h1>Most Popular Destinations</h1>
+			<button type="button" name="viewmore">View All Destinations</button>
+		</div>
+	</div>
+	<div class="place6">
+	<div id="place">
+		<a href="#"><h3>Dubai</h3></a>
+	</div>
+	</div>
+</div>
+<div class="grid-container1">
+	<div class="place7">
+	<div id="place">
+		<a href="#"><h3>England</h3></a>
+	</div>
+	</div>
+	<div class="place8">
+	<div id="place">
+		<a href="#"><h3>Mexico</h3></a>
+	</div>
+	</div>
+	<div class="place9">
+	<div id="place">
+		<a href="#"><h3>Australia</h3></a>
+	</div>
+	</div>
+	<div class="place10">
+	<div id="place">
+		<a href="#"><h3>Argentina</h3></a>
+	</div>
+	</div>
+</div>
+</div>
+
+<!-- Blog -->
+	<div class="header">
+ 		<h1>Recent From Blog</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+ 	</div>
+<div class="blog">
+	<div id="blogbox">
+		<img src="img/greece.jpg" alt="">
+		<a href="#"><h4>30% Discount to Travel All Around the World</h4></a>
+		<h8>Sep, 15th</h8> <a href="#">21 <i class="fas fa-comment"></i></a>
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		<a href="#">Learn More...</a>
+	</div>
+	<div id="blogbox">
+		<img src="img/smwh.jpg" alt="">
+		<a href="#"><h4>Planning for Vacation</h4></a>
+		<h8>Sep, 15th</h8> <a href="#">21 <i class="fas fa-comment"></i></a>
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		<a href="#">Learn More...</a>
+	</div>
+	<div id="blogbox">
+		<img src="img/egypt1.jpg" alt="">
+		<a href="#"><h4>Visit Egypt</h4></a>
+		<h8>Sep, 15th</h8> <a href="#">21 <i class="fas fa-comment"></i></a>
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		<a href="#">Learn More...</a>
+	</div>
+<div id="btn1">
+	<button type="button" name="posts">See all post</button>
+</div>
+</div>
+
+<!-- Clients -->
+<div class="client">
+<div id="client">
+<h1>Happy Clients</h1>
+	<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>John Doe, CEO</h2>
+			<h7>domain@domain.com</h7>
+			<h4>Creative Director</h4>
+    </div>
+    <div class="flip-box-back">
+		<h2>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</h2>
+		</div>
+		</div>
+		</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="footer">
+	<ul>
+		<li>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</li>
+		<li>
+			<a href="#"><i class="fab fa-tumblr"></i></a>
+		</li>
+		<li>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</li>
+		<li>
+			<a href="#"><i class="fab fa-facebook"></i></a>
+		</li>
+		<li>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</li>
+	</ul>
+<footer>Copyright Travel. All rights reserved.</footer>
+</div>
+<!--No meter mano desde acá-->
+<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+</script>
+<!-- Hasta acá -->
+	</body>
+</html>
